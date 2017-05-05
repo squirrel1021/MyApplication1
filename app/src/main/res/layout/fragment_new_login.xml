@@ -252,7 +252,7 @@
         android:background="@color/white"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
-        android:text="@string/welcomanim_down"
+android:visibility="gone"
         android:gravity="center"
         android:layout_above="@+id/ly_sharefunc"
         android:textColor="@color/chb_text_color"
