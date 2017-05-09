@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/tv_down"
         android:layout_alignParentTop="true"
         android:background="@color/white"
-        android:scrollbars="none"
-        >
+        android:scrollbars="none">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -35,9 +33,9 @@
                     android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:text="@string/welcomanim_title_phone"
+                    android:text="账号"
                     android:textColor="@color/base_gray"
-                    android:textSize="@dimen/text_18"/>
+                    android:textSize="@dimen/text_18" />
 
                 <EditText
                     android:id="@+id/et_phone"
@@ -45,13 +43,13 @@
                     android:layout_height="wrap_content"
                     android:layout_toRightOf="@+id/tv_phonetitle"
                     android:background="@null"
+                    android:hint="@string/input_phone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:singleLine="true"
                     android:textColor="@color/base_gray"
                     android:textColorHint="@color/gray"
-                    android:inputType="number"
-                    android:singleLine="true"
-                    android:maxLength="11"
-                    android:hint="@string/input_phone"
-                    android:textSize="@dimen/text_18"/>
+                    android:textSize="@dimen/text_18" />
             </RelativeLayout>
 
             <View
@@ -59,7 +57,7 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0.6dp"
                 android:layout_below="@+id/rl_phone"
-                android:background="#e3e3e3"/>
+                android:background="#e3e3e3" />
 
             <RelativeLayout
                 android:id="@+id/rl_psw"
@@ -77,7 +75,7 @@
                     android:layout_centerVertical="true"
                     android:text="@string/welcomanim_title_psw"
                     android:textColor="@color/base_gray"
-                    android:textSize="@dimen/text_18"/>
+                    android:textSize="@dimen/text_18" />
 
                 <EditText
                     android:id="@+id/et_psw"
@@ -88,11 +86,11 @@
                     android:background="@null"
                     android:hint="@string/welcomanim_title_psw_hint"
                     android:inputType="textPassword"
-                    android:singleLine="true"
                     android:maxLength="20"
+                    android:singleLine="true"
                     android:textColor="@color/base_gray"
                     android:textColorHint="@color/gray"
-                    android:textSize="@dimen/text_18"/>
+                    android:textSize="@dimen/text_18" />
 
                 <TextView
                     android:id="@+id/tv_forgetpsw"
@@ -102,15 +100,16 @@
                     android:layout_centerVertical="true"
                     android:text="@string/welcomanim_title_forgetpsw"
                     android:textColor="@color/tab_message"
-                    android:textSize="@dimen/text_18"/>
+                    android:textSize="@dimen/text_18" />
+
                 <ImageView
                     android:id="@+id/btn_login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_login_confirm"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:visibility="gone"/>
+                    android:src="@mipmap/ic_login_confirm"
+                    android:visibility="gone" />
             </RelativeLayout>
 
             <View
@@ -118,14 +117,22 @@
                 android:layout_width="fill_parent"
                 android:layout_height="0.6dp"
                 android:layout_below="@+id/rl_psw"
-                android:background="#e3e3e3"/>
+                android:background="#e3e3e3" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_marginTop="@dimen/text_20"
+                android:text="登陆"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spit_view2" />
 
             <RelativeLayout
                 android:id="@+id/rl_socialtitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/spit_view2"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="130dp"
                 android:orientation="horizontal">
 
                 <View
@@ -135,7 +142,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginRight="10dp"
                     android:layout_toLeftOf="@+id/tv_socialtitle"
-                    android:background="#e3e3e3"/>
+                    android:background="#e3e3e3" />
 
                 <TextView
                     android:id="@+id/tv_socialtitle"
@@ -144,7 +151,7 @@
                     android:layout_centerInParent="true"
                     android:text="@string/welcomanim_title_social"
                     android:textColor="@color/gray"
-                    android:textSize="@dimen/text_14"/>
+                    android:textSize="@dimen/text_14" />
 
                 <View
                     android:id="@+id/spit_view4"
@@ -153,7 +160,7 @@
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="10dp"
                     android:layout_toRightOf="@+id/tv_socialtitle"
-                    android:background="#e3e3e3"/>
+                    android:background="#e3e3e3" />
 
             </RelativeLayout>
 
@@ -176,7 +183,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/welcome_logo_weibo"/>
+                        android:src="@mipmap/welcome_logo_weibo" />
 
                     <TextView
                         android:id="@+id/tv_social_title_weibo"
@@ -187,7 +194,7 @@
                         android:layout_marginTop="@dimen/margin_nomal"
                         android:text="@string/welcomanim_title_social_weibo"
                         android:textColor="@color/base_gray"
-                        android:textSize="@dimen/text_14"/>
+                        android:textSize="@dimen/text_14" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -202,7 +209,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/welcome_logo_wechat"/>
+                        android:src="@mipmap/welcome_logo_wechat" />
 
                     <TextView
                         android:id="@+id/tv_social_title_wechat"
@@ -213,7 +220,7 @@
                         android:layout_marginTop="@dimen/margin_nomal"
                         android:text="@string/welcomanim_title_social_wechat"
                         android:textColor="@color/base_gray"
-                        android:textSize="@dimen/text_14"/>
+                        android:textSize="@dimen/text_14" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -228,7 +235,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/welcome_logo_qq"/>
+                        android:src="@mipmap/welcome_logo_qq" />
 
                     <TextView
                         android:id="@+id/tv_social_title_qq"
@@ -239,24 +246,11 @@
                         android:layout_marginTop="@dimen/margin_nomal"
                         android:text="@string/welcomanim_title_social_qq"
                         android:textColor="@color/base_gray"
-                        android:textSize="@dimen/text_14"/>
+                        android:textSize="@dimen/text_14" />
                 </RelativeLayout>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>
-
-    <TextView
-        android:id="@+id/tv_down"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-android:visibility="gone"
-        android:gravity="center"
-        android:layout_above="@+id/ly_sharefunc"
-        android:textColor="@color/chb_text_color"
-        android:textSize="@dimen/text_17"/>
 
 
     <RelativeLayout
@@ -269,35 +263,7 @@ android:visibility="gone"
         android:paddingBottom="10dp"
         android:paddingTop="10dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/chb_share"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/ckb_share_back"
-                android:checked="true"
-                android:background="@null"
-                android:button="@null"
-                android:layout_marginBottom="20dp"
-                android:drawablePadding="0dp"
-                android:text="@string/welcomanim_title_share"
-                android:textColor="@color/chb_text_color"
-                android:textSize="@dimen/text_12" />
-
-            <TextView
-                android:id="@+id/tv_policy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="@string/welcomanim_title_policy"
-                android:textColor="@color/chb_text_color"
-                android:textSize="@dimen/text_12"/>
-        </LinearLayout>
     </RelativeLayout>
 
 </RelativeLayout>
