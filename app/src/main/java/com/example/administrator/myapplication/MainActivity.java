@@ -43,21 +43,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setLogin() {
-//        BmobQuery<_User> query = new BmobQuery<_User>();
-//        query.addWhereEqualTo("username", userName.getText()+"");
-//        query.findObjects(new FindListener<_User>() {
-//            @Override
-//            public void done(List<_User> list, BmobException e) {
-//                if(e==null){
-//                    Log.i("_User",list.get(0).getPassword());
-//                    Toast.makeText(MainActivity.this,"查询成功",Toast.LENGTH_LONG).show();
-//                }else{
-//                    Log.i("BmobExceptiond",e.toString());
-//                    Toast.makeText(MainActivity.this,"查询失败",Toast.LENGTH_LONG).show();
-//                }
-//            }
-//        });
-
         BmobQuery<_User> query = new BmobQuery<_User>();
         query.addWhereEqualTo("username",userName.getText()+"");
         Log.i("loginsdf", userName.getText()+"");

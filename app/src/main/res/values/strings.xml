@@ -21,8 +21,8 @@
 
     <string name="input_phone">请输入你的账号</string>
     <string name="reg_select_country">请选择国家地区</string>
-    <string name="reg_write_identify_code">请输入短信验证码</string>
-    <string name="smssdk_write_mobile_phone">请填写手机号码</string>
+    <string name="reg_write_identify_code">请输入密码</string>
+    <string name="smssdk_write_mobile_phone">请输入账号(手机号或邮箱)</string>
     <string name="reg_send_ver">发送</string>
-    <string name="reg_next">验证并登录</string>
+    <string name="reg_next">注册并登录</string>
 </resources>

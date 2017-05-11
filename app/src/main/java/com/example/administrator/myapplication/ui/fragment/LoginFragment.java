@@ -17,6 +17,7 @@ import android.widget.Toast;
 
 import com.example.administrator.myapplication.MainActivity;
 import com.example.administrator.myapplication.R;
+import com.example.administrator.myapplication.bean.UserTable;
 import com.example.administrator.myapplication.bean._User;
 import com.example.administrator.myapplication.ui.activity.HomeActivity;
 
@@ -55,18 +56,23 @@ public class LoginFragment extends Fragment {
     }
 
     private void login() {
-        BmobQuery<_User> query = new BmobQuery<_User>();
+        BmobQuery<UserTable> query = new BmobQuery<UserTable>();
         query.addWhereEqualTo("username",username.getText()+"");
         Log.i("loginsdf", username.getText()+"");
-        query.findObjects(new FindListener<_User>() {
+        query.findObjects(new FindListener<UserTable>() {
             @Override
-            public void done(List<_User> list, BmobException e) {
+            public void done(List<UserTable> list, BmobException e) {
                 if(e==null){
-                    Toast.makeText(getActivity(),"登陆成功",Toast.LENGTH_LONG).show();
-                    Log.i("bmob12", list.get(0).getUsername());
-                    Intent intent=new Intent();
-                    intent.setClass(getActivity(), HomeActivity.class);
-                    startActivity(intent);
+                    if(list.size()!=0){
+                        Toast.makeText(getActivity(),"登陆成功",Toast.LENGTH_LONG).show();
+                        Log.i("bmob12", list.get(0).getUsername());
+                        Intent intent=new Intent();
+                        intent.setClass(getActivity(), HomeActivity.class);
+                        startActivity(intent);
+                    }else{
+                        Toast.makeText(getActivity(),"账号不存在",Toast.LENGTH_LONG).show();
+                    }
+
                 }else{
                     Log.i("bmobfail", e.getMessage()+","+e.getErrorCode());
                     Toast.makeText(getActivity(),"登陆失败",Toast.LENGTH_LONG).show();
