@@ -43,6 +43,6 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginBottom="160dp"
-        android:src="@mipmap/welcomeanim_second_buging"
+        android:src="@drawable/welcomeanim_second_buging"
         android:visibility="gone"/>
 </RelativeLayout>

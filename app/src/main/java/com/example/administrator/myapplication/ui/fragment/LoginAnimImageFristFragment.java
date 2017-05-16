@@ -35,8 +35,8 @@ public class LoginAnimImageFristFragment extends LoginAnimImageBaseFragment {
         iv_scroll = (ImageView) view.findViewById(R.id.iv_scroll);
         tv_bg = (ImageView) view.findViewById(R.id.tv_bg);
 
-        Bitmap bmpShield= BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_phone);
-        Bitmap bmpScroll= BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_frist_scrollbg);
+        Bitmap bmpShield= BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_phone);
+        Bitmap bmpScroll= BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_frist_scrollbg);
         mScrollBitmapHeight = mScrollBitmapNomalHeight;
 
         iv_scroll.setScaleType(ImageView.ScaleType.MATRIX);

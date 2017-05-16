@@ -55,11 +55,11 @@ public class LoginAnimFragment extends Fragment {
             public void onPageSelected(int position) {
                 super.onPageSelected(position);
                 if (position == 0) {
-                    mLoginText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, R.mipmap.ic_triangle);
+                    mLoginText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, R.drawable.ic_triangle);
                     mRegisterText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
                 } else {
                     mLoginText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
-                    mRegisterText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, R.mipmap.ic_triangle);
+                    mRegisterText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, R.drawable.ic_triangle);
                 }
             }
         });

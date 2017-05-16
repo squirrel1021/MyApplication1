@@ -108,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
-                    android:src="@mipmap/ic_login_confirm"
+                    android:src="@drawable/ic_login_confirm"
                     android:visibility="gone" />
             </RelativeLayout>
 
@@ -183,7 +183,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/welcome_logo_weibo" />
+                        android:src="@drawable/welcome_logo_weibo" />
 
                     <TextView
                         android:id="@+id/tv_social_title_weibo"
@@ -209,7 +209,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/welcome_logo_wechat" />
+                        android:src="@drawable/welcome_logo_wechat" />
 
                     <TextView
                         android:id="@+id/tv_social_title_wechat"
@@ -235,7 +235,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@mipmap/welcome_logo_qq" />
+                        android:src="@drawable/welcome_logo_qq" />
 
                     <TextView
                         android:id="@+id/tv_social_title_qq"

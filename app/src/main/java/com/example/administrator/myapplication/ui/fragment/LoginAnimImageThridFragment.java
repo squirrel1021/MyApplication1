@@ -38,8 +38,8 @@ public class LoginAnimImageThridFragment extends LoginAnimImageBaseFragment {
         iv_shield = (ImageView)view.findViewById(R.id.iv_shield);
         iv_care = (ImageView)view.findViewById(R.id.iv_care);
 
-        Bitmap bmpScroll= BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_thrid_scrollbg);
-        Bitmap bmpShield= BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_thrid_shield);
+        Bitmap bmpScroll= BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_thrid_scrollbg);
+        Bitmap bmpShield= BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_thrid_shield);
         mScrollBitmapHeight = mScrollBitmapNomalHeight;
 
         iv_shield.setScaleType(ImageView.ScaleType.MATRIX);
@@ -50,7 +50,7 @@ public class LoginAnimImageThridFragment extends LoginAnimImageBaseFragment {
         iv_scroll.setImageBitmap(bitmapScale(mImageViewWidth, bmpScroll, BITMAP_SCROLL));
 
 
-        Bitmap bmpCare= bitmapScale(BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_thrid_shield_care));
+        Bitmap bmpCare= bitmapScale(BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_thrid_shield_care));
         iv_care.setScaleType(ImageView.ScaleType.MATRIX);
         iv_care.setImageBitmap(bmpCare);
 

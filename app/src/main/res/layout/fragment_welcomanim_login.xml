@@ -27,7 +27,7 @@
                 android:gravity="center"
                 android:text="@string/welcomanim_title_login"
                 android:textColor="@color/white"
-                android:drawableBottom="@mipmap/ic_triangle"
+                android:drawableBottom="@drawable/ic_triangle"
                 android:textSize="@dimen/text_18"/>
 
             <TextView

@@ -52,9 +52,9 @@ public class LoginAnimImageSecondFragment extends LoginAnimImageBaseFragment {
         iv_buy = (ImageView) view.findViewById(R.id.iv_buy);
         iv_goods = (ImageView) view.findViewById(R.id.iv_goods);
 
-        Bitmap bmpScroll = BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_second_scrollbg);
-        Bitmap bmpShield = BitmapFactory.decodeResource(getResources(), R.mipmap.welcome_shield);
-        Bitmap bmpGoods = BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_second_goods);
+        Bitmap bmpScroll = BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_second_scrollbg);
+        Bitmap bmpShield = BitmapFactory.decodeResource(getResources(), R.drawable.welcome_shield);
+        Bitmap bmpGoods = BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_second_goods);
 
         mScrollBitmapHeight = mScrollBitmapNomalHeight;
 
@@ -69,8 +69,8 @@ public class LoginAnimImageSecondFragment extends LoginAnimImageBaseFragment {
         iv_goods.setImageBitmap(bitmapScale((int) ((float) (bitmap.getHeight() * mGoodsBitmapNomalHeight) / mScrollBitmapNomalHeight), bmpGoods, BITMAP_SHIELD));
         iv_goods.setVisibility(View.GONE);
 
-        bmpBuysIng = bitmapScale(BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_second_buging));
-        bmpBuysed = bitmapScale(BitmapFactory.decodeResource(getResources(), R.mipmap.welcomeanim_second_bugged));
+        bmpBuysIng = bitmapScale(BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_second_buging));
+        bmpBuysed = bitmapScale(BitmapFactory.decodeResource(getResources(), R.drawable.welcomeanim_second_bugged));
 
         RelativeLayout.LayoutParams params = (RelativeLayout.LayoutParams) iv_buy.getLayoutParams();
         int ivBuyMargin = DisplayUtil.dip2px(getActivity(), 50);
