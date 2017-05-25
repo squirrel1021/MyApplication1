@@ -145,7 +145,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
                     getActivity().runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-
                             Intent intent=new Intent();
                             intent.putExtra("nickname",nickname);
                             intent.putExtra("headImage",icon);

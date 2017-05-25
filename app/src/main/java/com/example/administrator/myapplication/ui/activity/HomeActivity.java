@@ -29,6 +29,7 @@ public class HomeActivity extends Activity {
     }
 
     private void initView() {
+
         String nickname=getIntent().getStringExtra("nickname");
         String imageUrl=getIntent().getStringExtra("headImage");
         ((TextView)findViewById(R.id.welcomeTv)).setText("欢迎"+nickname+"");
